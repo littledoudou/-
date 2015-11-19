@@ -280,7 +280,7 @@ class wechatCallbackapiTest
             }
 
             mysql_select_db("app_sjturg",$link);
-            mysql_query("INSERT INTO Users values('{$id}','unnamed',0,0,'',0)",$link);
+            mysql_query("INSERT INTO Users values('{$id}','unnamed',0,0,'',0,'WordList')",$link);
             mysql_close($link);
             return "wechatID:\n$id\n请设置您的用户名.";
     }
